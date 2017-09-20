@@ -52,7 +52,7 @@ import (
 	"github.com/fabric8io/kubernetes-model/pkg/schemagen"
 	"os"
 
-	sk8s "github.com/sk8sio/sk8s-types/pkg/apis/extensions/v1"
+	sk8s "github.com/sk8sio/sk8s-types/pkg/apis/extensions.sk8s.io/v1"
 
 )
 
@@ -215,6 +215,8 @@ func main() {
 		{"k8s.io/kubernetes/pkg/apis/storage/v1", "io.fabric8.kubernetes.api.model", "kubernetes_storageclass_"},
 
 		{"github.com/sk8s-types/pkg/apis/extensions/v1", "io.sk8s.kubernetes.api.model", "sk8s_io_"},
+
+		{"github.com/sk8sio/sk8s-types/pkg/apis/extensions.sk8s.io/v1", "io.sk8s.kubernetes.api.model", "sk8s_io_"},
 	}
 
 	typeMap := map[reflect.Type]reflect.Type{
