@@ -18,3 +18,6 @@ import:
   version: 01aeca54ebda6e0fbfafd0a524d234159c05ec20
 - package: github.com/gogo/protobuf/proto
   version: c0656edd0d9eab7c66d1eb0c568f9039345796f7
+- package: github.com/sk8sio/sk8s-types/pkg/apis/extensions/v1
+  repo: https://github.com/ericbottard/sk8s-types.git
+  vcs: git
