@@ -26,6 +26,7 @@
   </parent>
 
   <artifactId>kubernetes-model</artifactId>
+  <version>1.1.sk8s-SNAPSHOT</version>
   <packaging>bundle</packaging>
 
   <name>Fabric8 :: Kubernetes Model</name>
@@ -112,7 +113,7 @@
           <dependency>
             <groupId>io.fabric8</groupId>
             <artifactId>kubernetes-model-annotator</artifactId>
-            <version>${project.version}</version>
+            <version>${parent.version}</version>
           </dependency>
         </dependencies>
       </plugin>

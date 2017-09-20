@@ -50,3 +50,7 @@ import:
   version: fc2b8d3a73c4867e51861bbdd5ae3c1f0869dd6a
 - package: github.com/juju/ratelimit
   version: 5b9ff866471762aa2ab2dced63c9fb6f53921342
+
+- package: github.com/sk8sio/sk8s-types/pkg/apis/extensions/v1
+  repo: https://github.com/ericbottard/sk8s-types.git
+  vcs: git
