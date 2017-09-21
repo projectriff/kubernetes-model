@@ -48,7 +48,6 @@ import (
 	"github.com/fabric8io/kubernetes-model/pkg/schemagen"
 
 	sk8s "github.com/sk8sio/sk8s-types/pkg/apis/extensions.sk8s.io/v1"
-
 )
 
 type Schema struct {
@@ -168,8 +167,12 @@ type Schema struct {
 	CustomResourceDefinitionCondition apiextensions.CustomResourceDefinitionCondition
 	CustomResourceDefinitionStatus    apiextensions.CustomResourceDefinitionStatus
 
-	Topic                        	  sk8s.Topic
-	TopicList		              	  sk8s.TopicList
+	Topic                             sk8s.Topic
+	TopicList                         sk8s.TopicList
+	Handler                           sk8s.Handler
+	HandlerList                       sk8s.HandlerList
+	Function                          sk8s.Function
+	FunctionList                      sk8s.FunctionList
 }
 
 func main() {

@@ -129,6 +129,12 @@ func (g *schemaGenerator) javaType(t reflect.Type) string {
 			return "io.fabric8.kubernetes.api.model.HasMetadata"
 		case "List":
 			return pkgDesc.JavaPackage + ".BaseKubernetesList"
+		case "Function":
+			// Workaround https://github.com/sundrio/sundrio/issues/81
+			if pkgDesc.JavaPackage == "io.sk8s.kubernetes.api.model" {
+				return pkgDesc.JavaPackage + "." + "XFunction"
+			}
+			fallthrough
 		default:
 			return pkgDesc.JavaPackage + "." + t.Name()
 		}
