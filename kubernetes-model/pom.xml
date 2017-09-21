@@ -25,8 +25,9 @@
     <version>1.1-SNAPSHOT</version>
   </parent>
 
+  <groupId>io.sk8s</groupId>
   <artifactId>kubernetes-model</artifactId>
-  <version>1.1.sk8s-SNAPSHOT</version>
+  <version>1.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
 
   <name>Fabric8 :: Kubernetes Model</name>
@@ -87,6 +88,8 @@
         <version>${jsonschema2pojo.version}</version>
         <configuration>
           <sourceDirectory>${kube.dir}/schema</sourceDirectory>
+          <!-- This is irrelevant as it only pertains to the KubeSchema class, not used. All other types specify
+          their own target java class -->
           <targetPackage>io.fabric8.kubernetes.api.model</targetPackage>
           <includeConstructors>true</includeConstructors>
           <includeJsr303Annotations>true</includeJsr303Annotations>
