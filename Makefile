@@ -31,5 +31,6 @@ vendoring:
 	rm -rf vendor/github.com/openshift/origin/vendor vendor/k8s.io/apiextensions-server/vendor vendor/k8s.io/kubernetes/vendor vendor/k8s.io/kubernetes/staging/src/k8s.io/client-go/_vendor
 
 fixvendoring: vendoring
-	git reset --hard
-	rm -fR vendor/k8s.io/apiextensions-apiserver/examples/client-go/apis/cr/v1/doc.go vendor/k8s.io/apiextensions-apiserver/examples/client-go/apis/cr/v1/roundtrip_test.go vendor/k8s.io/apiextensions-apiserver/examples/client-go/apis/cr/v1/zz_generated.deepcopy.go vendor/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/fuzzer/ vendor/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/install/roundtrip_test.go
+	git add vendor/github.com/sk8sio
+	git clean -fd vendor
+	git checkout -- vendor glide.lock
