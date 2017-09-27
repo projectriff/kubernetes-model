@@ -37,5 +37,14 @@ public class FunctionUtils {
 		return handlerRef;
 	}
 
+	public static String param(String name, XFunction function) {
+		for (FunctionParam functionParam : function.getSpec().getParams()) {
+			if (functionParam.getName().equals(name)) {
+				return functionParam.getValue();
+			}
+		}
+		return null;
+	}
+
 
 }
