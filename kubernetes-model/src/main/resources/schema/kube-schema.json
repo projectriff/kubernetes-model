@@ -13767,7 +13767,7 @@
         },
         "dispatcher": {
           "type": "string",
-          "description": ""
+          "description": "The Dispatcher strategy to use with this handler (name of a spring bean)"
         },
         "image": {
           "type": "string",
