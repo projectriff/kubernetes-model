@@ -20,7 +20,7 @@ tag := $(shell cat .openshift-version)
 build:
 	CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -a ./cmd/generate/generate.go
 	./generate > kubernetes-model/src/main/resources/schema/kube-schema.json
-	mvn clean source:jar install
+	./mvnw clean source:jar install
 
 gobuild:
 	CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -a ./cmd/generate/generate.go
