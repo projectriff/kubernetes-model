@@ -13545,7 +13545,7 @@
           "type": "string",
           "description": ""
         },
-        "valueFrom": {
+        "value": {
           "type": "string",
           "description": ""
         }
@@ -13592,29 +13592,26 @@
         "io.fabric8.kubernetes.api.model.KubernetesResourceList"
       ]
     },
-    "sk8s_io_FunctionParam": {
-      "type": "object",
-      "description": "",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": ""
-        },
-        "value": {
-          "type": "string",
-          "description": ""
-        }
-      },
-      "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.FunctionParam",
-      "javaInterfaces": [
-        "io.fabric8.kubernetes.api.model.KubernetesResource"
-      ]
-    },
     "sk8s_io_FunctionSpec": {
       "type": "object",
       "description": "",
       "properties": {
+        "args": {
+          "type": "array",
+          "description": "",
+          "items": {
+            "type": "string",
+            "description": ""
+          }
+        },
+        "command": {
+          "type": "array",
+          "description": "",
+          "items": {
+            "type": "string",
+            "description": ""
+          }
+        },
         "env": {
           "type": "array",
           "description": "",
@@ -13623,9 +13620,9 @@
             "javaType": "io.sk8s.kubernetes.api.model.FunctionEnvVar"
           }
         },
-        "handlerRef": {
-          "$ref": "#/definitions/sk8s_io_HandlerReference",
-          "javaType": "io.sk8s.kubernetes.api.model.HandlerReference"
+        "image": {
+          "type": "string",
+          "description": ""
         },
         "input": {
           "type": "string",
@@ -13635,13 +13632,9 @@
           "type": "string",
           "description": ""
         },
-        "params": {
-          "type": "array",
-          "description": "",
-          "items": {
-            "$ref": "#/definitions/sk8s_io_FunctionParam",
-            "javaType": "io.sk8s.kubernetes.api.model.FunctionParam"
-          }
+        "protocol": {
+          "type": "string",
+          "description": ""
         }
       },
       "additionalProperties": true,
@@ -13728,25 +13721,6 @@
       "javaInterfaces": [
         "io.fabric8.kubernetes.api.model.KubernetesResource",
         "io.fabric8.kubernetes.api.model.KubernetesResourceList"
-      ]
-    },
-    "sk8s_io_HandlerReference": {
-      "type": "object",
-      "description": "",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": ""
-        },
-        "namespace": {
-          "type": "string",
-          "description": ""
-        }
-      },
-      "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.HandlerReference",
-      "javaInterfaces": [
-        "io.fabric8.kubernetes.api.model.KubernetesResource"
       ]
     },
     "sk8s_io_HandlerSpec": {
