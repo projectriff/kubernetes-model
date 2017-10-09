@@ -53,4 +53,3 @@ import:
 
 - package: github.com/sk8sio/sk8s-types/pkg/apis/extensions/v1
   repo: https://github.com/ericbottard/sk8s-types.git
-  vcs: git
