@@ -19,5 +19,6 @@ import:
 - package: github.com/gogo/protobuf/proto
   version: c0656edd0d9eab7c66d1eb0c568f9039345796f7
 - package: github.com/sk8sio/sk8s-types/pkg/apis/extensions.sk8s.io/v1
-  repo: https://github.com/markfisher/sk8s-types.git
+  repo: https://github.com/ericbottard/sk8s-types.git
+  version: sidecar-scaling
   vcs: git
