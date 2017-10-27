@@ -13652,121 +13652,6 @@
         "io.fabric8.kubernetes.api.model.KubernetesResource"
       ]
     },
-    "sk8s_io_Handler": {
-      "type": "object",
-      "description": "",
-      "properties": {
-        "apiVersion": {
-          "type": "string",
-          "description": "",
-          "default": "extensions.sk8s.io/v1",
-          "required": true
-        },
-        "kind": {
-          "type": "string",
-          "description": "",
-          "default": "Handler",
-          "required": true
-        },
-        "metadata": {
-          "$ref": "#/definitions/k8s_io_apimachinery_ObjectMeta",
-          "javaType": "io.fabric8.kubernetes.api.model.ObjectMeta"
-        },
-        "spec": {
-          "$ref": "#/definitions/sk8s_io_HandlerSpec",
-          "javaType": "io.sk8s.kubernetes.api.model.HandlerSpec"
-        },
-        "status": {
-          "$ref": "#/definitions/sk8s_io_HandlerStatus",
-          "javaType": "io.sk8s.kubernetes.api.model.HandlerStatus"
-        }
-      },
-      "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.Handler",
-      "javaInterfaces": [
-        "io.fabric8.kubernetes.api.model.HasMetadata"
-      ]
-    },
-    "sk8s_io_HandlerList": {
-      "type": "object",
-      "description": "",
-      "properties": {
-        "apiVersion": {
-          "type": "string",
-          "description": "",
-          "default": "extensions.sk8s.io/v1",
-          "required": true
-        },
-        "items": {
-          "type": "array",
-          "description": "",
-          "items": {
-            "$ref": "#/definitions/sk8s_io_Handler",
-            "javaType": "io.sk8s.kubernetes.api.model.Handler"
-          }
-        },
-        "kind": {
-          "type": "string",
-          "description": "",
-          "default": "HandlerList",
-          "required": true
-        },
-        "metadata": {
-          "$ref": "#/definitions/k8s_io_apimachinery_ListMeta",
-          "javaType": "io.fabric8.kubernetes.api.model.ListMeta"
-        }
-      },
-      "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.HandlerList",
-      "javaInterfaces": [
-        "io.fabric8.kubernetes.api.model.KubernetesResource",
-        "io.fabric8.kubernetes.api.model.KubernetesResourceList"
-      ]
-    },
-    "sk8s_io_HandlerSpec": {
-      "type": "object",
-      "description": "",
-      "properties": {
-        "args": {
-          "type": "array",
-          "description": "",
-          "items": {
-            "type": "string",
-            "description": ""
-          }
-        },
-        "command": {
-          "type": "string",
-          "description": ""
-        },
-        "dispatcher": {
-          "type": "string",
-          "description": "The Dispatcher strategy to use with this handler (name of a spring bean)"
-        },
-        "image": {
-          "type": "string",
-          "description": ""
-        },
-        "replicas": {
-          "type": "integer",
-          "description": ""
-        }
-      },
-      "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.HandlerSpec",
-      "javaInterfaces": [
-        "io.fabric8.kubernetes.api.model.KubernetesResource"
-      ]
-    },
-    "sk8s_io_HandlerStatus": {
-      "type": "object",
-      "description": "",
-      "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.HandlerStatus",
-      "javaInterfaces": [
-        "io.fabric8.kubernetes.api.model.KubernetesResource"
-      ]
-    },
     "sk8s_io_Topic": {
       "type": "object",
       "description": "",
@@ -14024,14 +13909,6 @@
     "GroupList": {
       "$ref": "#/definitions/os_user_GroupList",
       "javaType": "io.fabric8.openshift.api.model.GroupList"
-    },
-    "Handler": {
-      "$ref": "#/definitions/sk8s_io_Handler",
-      "javaType": "io.sk8s.kubernetes.api.model.Handler"
-    },
-    "HandlerList": {
-      "$ref": "#/definitions/sk8s_io_HandlerList",
-      "javaType": "io.sk8s.kubernetes.api.model.HandlerList"
     },
     "HorizontalPodAutoscaler": {
       "$ref": "#/definitions/kubernetes_autoscaling_HorizontalPodAutoscaler",
