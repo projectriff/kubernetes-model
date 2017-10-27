@@ -13635,10 +13635,6 @@
         "protocol": {
           "type": "string",
           "description": ""
-        },
-        "scalingStrategy": {
-          "$ref": "#/definitions/sk8s_io_ScalingStrategy",
-          "javaType": "io.sk8s.kubernetes.api.model.ScalingStrategy"
         }
       },
       "additionalProperties": true,
@@ -13767,25 +13763,6 @@
       "description": "",
       "additionalProperties": true,
       "javaType": "io.sk8s.kubernetes.api.model.HandlerStatus",
-      "javaInterfaces": [
-        "io.fabric8.kubernetes.api.model.KubernetesResource"
-      ]
-    },
-    "sk8s_io_ScalingStrategy": {
-      "type": "object",
-      "description": "",
-      "properties": {
-        "maxUpdatePeriodMilliSeconds": {
-          "type": "integer",
-          "description": ""
-        },
-        "replicasExpression": {
-          "type": "string",
-          "description": ""
-        }
-      },
-      "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.ScalingStrategy",
       "javaInterfaces": [
         "io.fabric8.kubernetes.api.model.KubernetesResource"
       ]
