@@ -179,8 +179,6 @@ type Schema struct {
 
 	Topic                             sk8s.Topic
 	TopicList                         sk8s.TopicList
-	Handler                           sk8s.Handler
-	HandlerList                       sk8s.HandlerList
 	Function                          sk8s.Function
 	FunctionList                      sk8s.FunctionList
 }
