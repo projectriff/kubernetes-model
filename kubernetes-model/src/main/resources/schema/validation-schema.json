@@ -13581,6 +13581,10 @@
           "$ref": "#/definitions/kubernetes_Container",
           "javaType": "io.fabric8.kubernetes.api.model.Container"
         },
+        "idleTimeout": {
+          "type": "integer",
+          "description": ""
+        },
         "input": {
           "type": "string",
           "description": ""
@@ -17602,6 +17606,10 @@
         "container": {
           "$ref": "#/definitions/kubernetes_Container",
           "javaType": "io.fabric8.kubernetes.api.model.Container"
+        },
+        "idleTimeout": {
+          "type": "integer",
+          "description": ""
         },
         "input": {
           "type": "string",
