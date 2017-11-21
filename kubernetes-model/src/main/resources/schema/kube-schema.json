@@ -13581,6 +13581,10 @@
           "$ref": "#/definitions/kubernetes_Container",
           "javaType": "io.fabric8.kubernetes.api.model.Container"
         },
+        "idleTimeoutMs": {
+          "type": "integer",
+          "description": ""
+        },
         "input": {
           "type": "string",
           "description": ""
