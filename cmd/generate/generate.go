@@ -52,7 +52,7 @@ import (
 	"github.com/fabric8io/kubernetes-model/pkg/schemagen"
 	"os"
 
-	sk8s "github.com/sk8sio/sk8s-types/pkg/apis/extensions.sk8s.io/v1"
+	riff "github.com/projectriff/kubernetes-crds/pkg/apis/projectriff.io/v1"
 )
 
 type Schema struct {
@@ -177,10 +177,10 @@ type Schema struct {
 	StorageClass                      storageclassapi.StorageClass
 	StorageClassList                  storageclassapi.StorageClassList
 
-	Topic                             sk8s.Topic
-	TopicList                         sk8s.TopicList
-	Function                          sk8s.Function
-	FunctionList                      sk8s.FunctionList
+	Topic                             riff.Topic
+	TopicList                         riff.TopicList
+	Function                          riff.Function
+	FunctionList                      riff.FunctionList
 }
 
 func main() {
@@ -215,9 +215,7 @@ func main() {
 		{"k8s.io/apimachinery/pkg/apis/meta/v1", "io.fabric8.kubernetes.api.model", "k8s_io_apimachinery_"},
 		{"k8s.io/kubernetes/pkg/apis/storage/v1", "io.fabric8.kubernetes.api.model", "kubernetes_storageclass_"},
 
-		{"github.com/sk8s-types/pkg/apis/extensions/v1", "io.sk8s.kubernetes.api.model", "sk8s_io_"},
-
-		{"github.com/sk8sio/sk8s-types/pkg/apis/extensions.sk8s.io/v1", "io.sk8s.kubernetes.api.model", "sk8s_io_"},
+		{"github.com/projectriff/kubernetes-crds/pkg/apis/projectriff.io/v1", "io.projectriff.kubernetes.api.model", "projectriff_io_"},
 	}
 
 	typeMap := map[reflect.Type]reflect.Type{
