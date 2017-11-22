@@ -16963,9 +16963,44 @@
     },
     "deploymentstrategy": {
       "properties": {
-        "rollingUpdate": {
-          "$ref": "#/definitions/kubernetes_extensions_RollingUpdateDeployment",
-          "javaType": "io.fabric8.kubernetes.api.model.extensions.RollingUpdateDeployment"
+        "activeDeadlineSeconds": {
+          "type": "integer",
+          "description": "",
+          "javaType": "Long"
+        },
+        "annotations": {
+          "type": "object",
+          "description": "",
+          "additionalProperties": {
+            "type": "string",
+            "description": ""
+          },
+          "javaType": "java.util.Map\u003cString,String\u003e"
+        },
+        "customParams": {
+          "$ref": "#/definitions/os_deploy_CustomDeploymentStrategyParams",
+          "javaType": "io.fabric8.openshift.api.model.CustomDeploymentStrategyParams"
+        },
+        "labels": {
+          "type": "object",
+          "description": "",
+          "additionalProperties": {
+            "type": "string",
+            "description": ""
+          },
+          "javaType": "java.util.Map\u003cString,String\u003e"
+        },
+        "recreateParams": {
+          "$ref": "#/definitions/os_deploy_RecreateDeploymentStrategyParams",
+          "javaType": "io.fabric8.openshift.api.model.RecreateDeploymentStrategyParams"
+        },
+        "resources": {
+          "$ref": "#/definitions/kubernetes_ResourceRequirements",
+          "javaType": "io.fabric8.kubernetes.api.model.ResourceRequirements"
+        },
+        "rollingParams": {
+          "$ref": "#/definitions/os_deploy_RollingDeploymentStrategyParams",
+          "javaType": "io.fabric8.openshift.api.model.RollingDeploymentStrategyParams"
         },
         "type": {
           "type": "string",
