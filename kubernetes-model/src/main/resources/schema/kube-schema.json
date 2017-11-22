@@ -13502,14 +13502,14 @@
         "io.fabric8.kubernetes.api.model.KubernetesResourceList"
       ]
     },
-    "sk8s_io_Function": {
+    "projectriff_io_Function": {
       "type": "object",
       "description": "",
       "properties": {
         "apiVersion": {
           "type": "string",
           "description": "",
-          "default": "extensions.sk8s.io/v1",
+          "default": "projectriff.io/v1",
           "required": true
         },
         "kind": {
@@ -13523,36 +13523,36 @@
           "javaType": "io.fabric8.kubernetes.api.model.ObjectMeta"
         },
         "spec": {
-          "$ref": "#/definitions/sk8s_io_FunctionSpec",
-          "javaType": "io.sk8s.kubernetes.api.model.FunctionSpec"
+          "$ref": "#/definitions/projectriff_io_FunctionSpec",
+          "javaType": "io.projectriff.kubernetes.api.model.FunctionSpec"
         },
         "status": {
-          "$ref": "#/definitions/sk8s_io_FunctionStatus",
-          "javaType": "io.sk8s.kubernetes.api.model.FunctionStatus"
+          "$ref": "#/definitions/projectriff_io_FunctionStatus",
+          "javaType": "io.projectriff.kubernetes.api.model.FunctionStatus"
         }
       },
       "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.XFunction",
+      "javaType": "io.projectriff.kubernetes.api.model.XFunction",
       "javaInterfaces": [
         "io.fabric8.kubernetes.api.model.HasMetadata"
       ]
     },
-    "sk8s_io_FunctionList": {
+    "projectriff_io_FunctionList": {
       "type": "object",
       "description": "",
       "properties": {
         "apiVersion": {
           "type": "string",
           "description": "",
-          "default": "extensions.sk8s.io/v1",
+          "default": "projectriff.io/v1",
           "required": true
         },
         "items": {
           "type": "array",
           "description": "",
           "items": {
-            "$ref": "#/definitions/sk8s_io_Function",
-            "javaType": "io.sk8s.kubernetes.api.model.XFunction"
+            "$ref": "#/definitions/projectriff_io_Function",
+            "javaType": "io.projectriff.kubernetes.api.model.XFunction"
           }
         },
         "kind": {
@@ -13567,13 +13567,13 @@
         }
       },
       "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.FunctionList",
+      "javaType": "io.projectriff.kubernetes.api.model.FunctionList",
       "javaInterfaces": [
         "io.fabric8.kubernetes.api.model.KubernetesResource",
         "io.fabric8.kubernetes.api.model.KubernetesResourceList"
       ]
     },
-    "sk8s_io_FunctionSpec": {
+    "projectriff_io_FunctionSpec": {
       "type": "object",
       "description": "",
       "properties": {
@@ -13599,28 +13599,28 @@
         }
       },
       "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.FunctionSpec",
+      "javaType": "io.projectriff.kubernetes.api.model.FunctionSpec",
       "javaInterfaces": [
         "io.fabric8.kubernetes.api.model.KubernetesResource"
       ]
     },
-    "sk8s_io_FunctionStatus": {
+    "projectriff_io_FunctionStatus": {
       "type": "object",
       "description": "",
       "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.FunctionStatus",
+      "javaType": "io.projectriff.kubernetes.api.model.FunctionStatus",
       "javaInterfaces": [
         "io.fabric8.kubernetes.api.model.KubernetesResource"
       ]
     },
-    "sk8s_io_Topic": {
+    "projectriff_io_Topic": {
       "type": "object",
       "description": "",
       "properties": {
         "apiVersion": {
           "type": "string",
           "description": "",
-          "default": "extensions.sk8s.io/v1",
+          "default": "projectriff.io/v1",
           "required": true
         },
         "kind": {
@@ -13634,36 +13634,36 @@
           "javaType": "io.fabric8.kubernetes.api.model.ObjectMeta"
         },
         "spec": {
-          "$ref": "#/definitions/sk8s_io_TopicSpec",
-          "javaType": "io.sk8s.kubernetes.api.model.TopicSpec"
+          "$ref": "#/definitions/projectriff_io_TopicSpec",
+          "javaType": "io.projectriff.kubernetes.api.model.TopicSpec"
         },
         "status": {
-          "$ref": "#/definitions/sk8s_io_TopicStatus",
-          "javaType": "io.sk8s.kubernetes.api.model.TopicStatus"
+          "$ref": "#/definitions/projectriff_io_TopicStatus",
+          "javaType": "io.projectriff.kubernetes.api.model.TopicStatus"
         }
       },
       "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.Topic",
+      "javaType": "io.projectriff.kubernetes.api.model.Topic",
       "javaInterfaces": [
         "io.fabric8.kubernetes.api.model.HasMetadata"
       ]
     },
-    "sk8s_io_TopicList": {
+    "projectriff_io_TopicList": {
       "type": "object",
       "description": "",
       "properties": {
         "apiVersion": {
           "type": "string",
           "description": "",
-          "default": "extensions.sk8s.io/v1",
+          "default": "projectriff.io/v1",
           "required": true
         },
         "items": {
           "type": "array",
           "description": "",
           "items": {
-            "$ref": "#/definitions/sk8s_io_Topic",
-            "javaType": "io.sk8s.kubernetes.api.model.Topic"
+            "$ref": "#/definitions/projectriff_io_Topic",
+            "javaType": "io.projectriff.kubernetes.api.model.Topic"
           }
         },
         "kind": {
@@ -13678,13 +13678,13 @@
         }
       },
       "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.TopicList",
+      "javaType": "io.projectriff.kubernetes.api.model.TopicList",
       "javaInterfaces": [
         "io.fabric8.kubernetes.api.model.KubernetesResource",
         "io.fabric8.kubernetes.api.model.KubernetesResourceList"
       ]
     },
-    "sk8s_io_TopicSpec": {
+    "projectriff_io_TopicSpec": {
       "type": "object",
       "description": "",
       "properties": {
@@ -13694,16 +13694,16 @@
         }
       },
       "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.TopicSpec",
+      "javaType": "io.projectriff.kubernetes.api.model.TopicSpec",
       "javaInterfaces": [
         "io.fabric8.kubernetes.api.model.KubernetesResource"
       ]
     },
-    "sk8s_io_TopicStatus": {
+    "projectriff_io_TopicStatus": {
       "type": "object",
       "description": "",
       "additionalProperties": true,
-      "javaType": "io.sk8s.kubernetes.api.model.TopicStatus",
+      "javaType": "io.projectriff.kubernetes.api.model.TopicStatus",
       "javaInterfaces": [
         "io.fabric8.kubernetes.api.model.KubernetesResource"
       ]
@@ -13856,12 +13856,12 @@
       "javaType": "io.fabric8.kubernetes.api.model.EventList"
     },
     "Function": {
-      "$ref": "#/definitions/sk8s_io_Function",
-      "javaType": "io.sk8s.kubernetes.api.model.XFunction"
+      "$ref": "#/definitions/projectriff_io_Function",
+      "javaType": "io.projectriff.kubernetes.api.model.XFunction"
     },
     "FunctionList": {
-      "$ref": "#/definitions/sk8s_io_FunctionList",
-      "javaType": "io.sk8s.kubernetes.api.model.FunctionList"
+      "$ref": "#/definitions/projectriff_io_FunctionList",
+      "javaType": "io.projectriff.kubernetes.api.model.FunctionList"
     },
     "Group": {
       "$ref": "#/definitions/os_user_Group",
@@ -14188,12 +14188,12 @@
       "javaType": "io.fabric8.kubernetes.api.model.Toleration"
     },
     "Topic": {
-      "$ref": "#/definitions/sk8s_io_Topic",
-      "javaType": "io.sk8s.kubernetes.api.model.Topic"
+      "$ref": "#/definitions/projectriff_io_Topic",
+      "javaType": "io.projectriff.kubernetes.api.model.Topic"
     },
     "TopicList": {
-      "$ref": "#/definitions/sk8s_io_TopicList",
-      "javaType": "io.sk8s.kubernetes.api.model.TopicList"
+      "$ref": "#/definitions/projectriff_io_TopicList",
+      "javaType": "io.projectriff.kubernetes.api.model.TopicList"
     },
     "User": {
       "$ref": "#/definitions/os_user_User",
