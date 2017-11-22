@@ -1,5 +1,5 @@
-hash: 1ad2f32dcc7b13c2a765a895932c294391ed100af2b34e4f0e7d51adecc29156
-updated: 2017-11-21T09:38:19.757396+01:00
+hash: 7146e3fd7ece62498f145a3a1449f3cfd82a7aa714bb7a28827c4a3969ae1b76
+updated: 2017-11-22T14:51:53.538156+01:00
 imports:
 - name: github.com/beorn7/perks
   version: 3ac7bf7a47d159a033b107610db8a1b6575507a4
@@ -237,6 +237,10 @@ imports:
   - pkg/util/user
 - name: github.com/pborman/uuid
   version: ca53cad383cad2479bbba7f7a1a05797ec1386e4
+- name: github.com/projectriff/kubernetes-crds
+  version: 016c0076807d3040f8417e23a8b81f7d8af21ff6
+  subpackages:
+  - pkg/apis/projectriff.io/v1
 - name: github.com/prometheus/client_golang
   version: e7e903064f5e9eb5da98208bae10b475d4db0f8c
 - name: github.com/prometheus/client_model
@@ -251,12 +255,6 @@ imports:
   version: 5bd2802263f21d8788851d5305584c82a5c75d7e
 - name: github.com/Sirupsen/logrus
   version: aaf92c95712104318fc35409745f1533aa5ff327
-- name: github.com/sk8sio/sk8s-types
-  version: 20d5cbea7db5d7db04ce7689f588faf37bad0a8c
-  repo: https://github.com/ericbottard/sk8s-types.git
-  subpackages:
-  - pkg/apis/extensions.sk8s.io/v1
-  - pkg/apis/extensions/v1
 - name: github.com/spf13/pflag
   version: 9ff6c6923cfffbcd502984b8e0c80539a94968b7
 - name: github.com/ugorji/go

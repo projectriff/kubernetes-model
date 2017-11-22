@@ -138,7 +138,7 @@ func (g *schemaGenerator) javaType(t reflect.Type) string {
 			return pkgDesc.JavaPackage + ".BaseKubernetesList"
 		case "Function":
 			// Workaround https://github.com/sundrio/sundrio/issues/81
-			if pkgDesc.JavaPackage == "io.sk8s.kubernetes.api.model" {
+			if pkgDesc.JavaPackage == "io.projectriff.kubernetes.api.model" {
 				return pkgDesc.JavaPackage + "." + "XFunction"
 			}
 			fallthrough
