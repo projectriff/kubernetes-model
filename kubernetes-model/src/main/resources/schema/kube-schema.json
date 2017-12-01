@@ -13589,6 +13589,10 @@
           "type": "string",
           "description": ""
         },
+        "maxReplicas": {
+          "type": "integer",
+          "description": ""
+        },
         "output": {
           "type": "string",
           "description": ""
